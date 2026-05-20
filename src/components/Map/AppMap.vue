@@ -31,7 +31,7 @@ onMounted(() => {
 
   const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/outdoors-v12',
+    style: 'mapbox://styles/mapbox/outdoors-v11',
     center: westernAustralia,
     maxBounds: bounds,
     minZoom: 0,
