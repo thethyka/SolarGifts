@@ -25,6 +25,10 @@ const bounds: [number, number, number, number]= [ 104.9211, -42.1406, 136.0019, 
 mapboxgl.accessToken = accessToken
 
 onMounted(() => {
+  if (!accessToken) {
+    throw new Error('Missing Mapbox token. Set VITE_MAPBOX_TOKEN in GitHub Actions secrets.')
+  }
+
   const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/outdoors-v12',
