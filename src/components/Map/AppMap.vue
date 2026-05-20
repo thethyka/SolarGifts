@@ -27,7 +27,7 @@ mapboxgl.accessToken = accessToken
 onMounted(() => {
   const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/satellite-v9',
+    style: 'mapbox://styles/mapbox/outdoors-v12',
     center: westernAustralia,
     maxBounds: bounds,
     minZoom: 0,
